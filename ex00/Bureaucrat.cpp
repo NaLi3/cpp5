@@ -6,7 +6,7 @@
 /*   By: ilevy <ilevy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 10:49:55 by ilevy             #+#    #+#             */
-/*   Updated: 2025/06/27 15:59:58 by ilevy            ###   ########.fr       */
+/*   Updated: 2025/06/28 15:41:54 by ilevy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ Bureaucrat::Bureaucrat( const Bureaucrat& copy ):_name(copy.getName()), _grade(c
 //Copy assignment operator
 Bureaucrat&	Bureaucrat::operator=( const Bureaucrat& src )
 {
-	this->_grade = src.getGrade();
+	this->setGrade(src.getGrade());
 	std::cout << GREEN << "Copy assignment operator called for bureaucrat." \
 	<< "(Name cannot be changed from assignation, so name is " << this->getName() \
 	<< " and their grade is " << this->getGrade() << RESET << std::endl;
